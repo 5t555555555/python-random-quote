@@ -1,12 +1,12 @@
 def main():
   print("Keep it logically awesome.\n")
-  print("hello world")
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+  f = open("quotes.txt",'r',encoding='utf-8')
+  quotes = f.readlines()
+  f.close()
 
-  #print(quotes)
+  print(quotes[0])
+  print(quotes[-1])
 
 if __name__== "__main__":
   main()
